@@ -8,6 +8,8 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 
+HEALTHCHECK --interval=30s --timeout=3s --retries=3 CMD curl -f http://localhost/health || exit 1
+
 #React uses 3000 by default
 EXPOSE 3000
 
