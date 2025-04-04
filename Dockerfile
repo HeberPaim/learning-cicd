@@ -1,4 +1,8 @@
 FROM node:18
+
+RUN useradd -m appuser
+USER appuser
+
 WORKDIR /app
 
 # Copy package files separately to leverage Docker cache
