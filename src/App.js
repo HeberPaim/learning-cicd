@@ -1,19 +1,17 @@
-import React, {Component} from 'react';
+import React, { Component } from "react";
 import Form from "../src/components/loginForm";
-class App extends Component{
-  
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props);
-  };
+  }
 
-  render(){
-    return(
+  render() {
+    return (
       <div>
-        <Form/>
+        <Form />
       </div>
     );
   }
-
 }
 
 export default App;
