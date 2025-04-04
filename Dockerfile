@@ -1,7 +1,5 @@
 FROM node:18
-
-RUN useradd -m appuser
-USER appuser
+USER root
 
 WORKDIR /app
 
