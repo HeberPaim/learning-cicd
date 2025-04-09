@@ -1,0 +1,16 @@
+.title {
+  width: auto;
+  height: auto;
+}
+
+.form {
+  padding-left: 25px;
+  height: auto;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  width: 100px;
+}
