@@ -1,4 +1,4 @@
-# Projeto rápido para SOMATIVA01 da disciplina Tecnologias Para Desenvolvimento Web
+# Projeto entregável para a SOMATIVA1 da disciplina DevOps
 
-> Atualmente contém apenas um formulário para a primeira entrega,
-> futuramente irei adicionar react routes e afins.
+> Atualmente contém apenas um fluxo simples de CI, um de CD e um docker funcional.
+
