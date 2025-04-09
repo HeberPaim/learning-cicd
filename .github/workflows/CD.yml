@@ -16,6 +16,9 @@ jobs:
           with:
             name: projeto.zip
             path: |
-              './*'
+              '**.js'
+              '**.css'
+              '**.html'
+              '**.json'
               !.github
               README.md
