@@ -37,13 +37,17 @@ class Form extends Component {
     return (
       <form className="form">
         <h1>Login</h1>
+        <label for="email">Email</label>
         <input
+          id="email"
           type="text"
           size="20"
           name="email"
           onChange={(e) => this.muda(e)}
         />
+        <label for="senha">Senha</label>
         <input
+          id="senha"
           type="password"
           size="20"
           name="senha"
