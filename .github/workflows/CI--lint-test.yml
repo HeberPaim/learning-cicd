@@ -5,7 +5,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  eslint:
+  linting:
     name: Run eslint scanning
     runs-on: ubuntu-latest
     permissions:
@@ -26,3 +26,20 @@ jobs:
         run: npx eslint .
           --ext .js,.jsx,.ts,.tsx
         continue-on-error: true
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar testes
+        run: npm test -- --watchAll=false
+
