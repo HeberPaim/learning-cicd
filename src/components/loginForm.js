@@ -37,7 +37,7 @@ class Form extends Component {
     return (
       <form className="form">
         <h1>Login</h1>
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           id="email"
           type="text"
@@ -45,7 +45,7 @@ class Form extends Component {
           name="email"
           onChange={(e) => this.muda(e)}
         />
-        <label for="senha">Senha</label>
+        <label htmlFor="senha">Senha</label>
         <input
           id="senha"
           type="password"
